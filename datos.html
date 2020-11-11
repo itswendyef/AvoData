@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>AvoData</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker/css/datepicker.css" />
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap-daterangepicker/daterangepicker.css" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+      <header class="header black-bg">
+          <div class="sidebar-toggle-box">
+              <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+          </div>
+          <!--logo start-->
+          <a href="index.html" class="logo"><span>A</span>vo<span>D</span>ata</b></a>
+
+          <!--logo end-->
+          <div class="nav notify-row" id="top_menu">
+              <!--  notification start -->
+              <ul class="nav top-menu">
+
+                  <!-- notification dropdown start-->
+                  <li id="header_notification_bar" class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                          <i class="fa fa-bell-o"></i>
+                          <span class="badge bg-warning">7</span>
+                      </a>
+                      <ul class="dropdown-menu extended notification">
+                          <div class="notify-arrow notify-arrow-yellow"></div>
+                          <li>
+                              <p class="yellow">You have 3 new notifications</p>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                                  Alerta de Tormenta
+                                  <span class="small italic">4 mins.</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                                  Humedad 35%.
+                                  <span class="small italic">2 hrs.</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="label label-success"><i class="fa fa-plus"></i></span>
+                                  Riego agendado
+                                  <span class="small italic">3 hrs.</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">See all notifications</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <!-- notification dropdown end -->
+              </ul>
+              <!--  notification end -->
+          </div>
+          <div class="top-menu">
+              <ul class="nav pull-right top-menu">
+                  <li><a class="logout" href="login.html">Logout</a></li>
+              </ul>
+          </div>
+      </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+      <aside>
+          <div id="sidebar" class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+                  <p class="centered"><a href=""><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+                  <h5 class="centered">Jesus Rosas</h5>
+                  <li class="mt">
+                      <a class="active" href="index.html">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Inicio</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;">
+                          <i class=" fa fa-bar-chart-o"></i>
+                          <span>Estadísticas </span>
+                      </a>
+                      <ul class="sub">
+                          <li><a href="parcela.html">Huerta 1</a></li>
+                          <li><a href="parcela.html">Huerta 2</a></li>
+                          <li><a href="parcela.html">Huerta 2</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;">
+                          <i class="fa fa-cogs"></i>
+                          <span>Configuraciones</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a href="datos.html">Huerta 1</a></li>
+                          <li><a href="datos.html">Huerta 3</a></li>
+                          <li><a href="datos.html">Huerta 3</a></li>
+                      </ul>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <h3><i class="fa fa-angle-right"></i>Configuraciones</h3>
+        
+        <!--PRODUCCIÓN -->
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="form-panel">
+              <h4 class="mb"><i class="fa fa-angle-right"></i> Producción</h4>
+              <form class="form-horizontal style-form" method="get">
+                <!-- RESULTADOS DE COSECHA-->
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Nueva cosecha</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Toneladas producidas">
+                  </div>
+                  <div class="col-md-3 col-xs-11">
+                    <div data-date-viewmode="years" data-date-format="dd-mm-yyyy" data-date="01-01-2014" class="input-append date dpYears">
+                      <input type="text" readonly="" value="10-11-2020" size="16" class="form-control">
+                      <span class="input-group-btn add-on">
+                        <button class="btn btn-theme" type="button"><i class="fa fa-calendar"></i></button>
+                        </span>
+                    </div>
+                    <span class="help-block">Seleccione la fecha de cosecha</span>
+                  </div>
+                </div>
+
+                <!--ARBOLES-->
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Mis árboles </label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control">
+                    <span class="help-block">Número de árboles</span>
+                  </div>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control">
+                    <span class="help-block">Edad de los árboles</span>
+                  </div>
+                </div>
+
+                <span class="btn btn-success fileinput-button">
+                  <i class="glyphicon glyphicon-plus"></i>
+                  <span>Agregar cambios</span>
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!--Configuraciones del suelo -->
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="form-panel">
+              <h4 class="mb"><i class="fa fa-angle-right"></i> Configuraciones del suelo</h4>
+              <form class="form-horizontal style-form" method="get">
+               
+                <!--porcentaje de arena-->
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Porcentaje de arena</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Porcentaje de arena en la tierra">
+                  </div>
+                  <div><span class="help-block">%</span></div>
+                </div>
+
+                <!--porcentaje de limo-->
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Porcentaje de limo</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Porcentaje de limo en la tierra">
+                  </div>
+                  <div><span class="help-block">%</span></div>      
+                </div>
+
+                <!--porcentaje de arcilla-->
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Porcentaje de arcilla</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Porcentaje de arcilla en la tierra">
+                  </div>
+                  <div><span class="help-block">%</span></div>      
+                </div>
+
+                
+                <!--porcentaje de materia orgánica-->
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Porcentaje de materia orgánica</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Porcentaje de materia orgánica en la tierra">
+                  </div>
+                  <div><span class="help-block">%</span></div>      
+                </div>
+
+                <!--porcentaje de la pendiente del terreno-->
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Porcentaje de la pendiente </label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Porcentaje de la pendiente del terreno">
+                  </div>
+                  <div><span class="help-block">%</span></div>      
+                </div>
+
+                <span class="btn btn-success fileinput-button">
+                  <i class="glyphicon glyphicon-plus"></i>
+                  <span>Agregar cambios</span>
+                </span>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+    
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <!--script for this page-->
+  <script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+  <!--custom switch-->
+  <script src="lib/bootstrap-switch.js"></script>
+  <!--custom tagsinput-->
+  <script src="lib/jquery.tagsinput.js"></script>
+  <!--custom checkbox & radio-->
+  <script type="text/javascript" src="lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-daterangepicker/date.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+  <script src="lib/form-component.js"></script>
+
+</body>
+
+</html>
