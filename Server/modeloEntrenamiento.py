@@ -6,10 +6,10 @@ from joblib import dump, load
 
 # Cargar datos
 
-df = pd.read_csv("c:/Users/E1_gi/OneDrive/Escritorio/valoresAguacate.csv")
+df = pd.read_csv("c:/Users/E1_gi/OneDrive/Escritorio/AvoData/AvoData/Server/valoresAguacate.csv")
 
 # Eliminar los datos inutiles
-f_dataframe = pd.get_dummies(df, columns=['dia', 'mes','ano'])
+f_dataframe = pd.get_dummies(df, columns=['dia', 'mes','anio'])
 
 # Eliminamos el dato que queremos predecir
 del f_dataframe['agua']
