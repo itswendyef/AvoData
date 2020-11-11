@@ -30,5 +30,5 @@ procesado = model.predict(A_evaluar)
 # Obtiene el valor predicho para hoy
 agua_valorf = procesado[0]
 
-print("Litros de agua para hoy: ${:,.2f}".format(agua_valorf))
+print("Litros de agua para hoy: {:,.2f}".format(agua_valorf))
 
